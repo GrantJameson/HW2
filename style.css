@@ -1,0 +1,50 @@
+#game {
+    width: 100%;
+      height: 100%;
+
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#board-container {
+    display: flex;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 6px;
+    box-sizing: border-box;
+}
+
+.square {
+    border: 4px solid;
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 50px;
+	color: white;
+	text-align: center;
+
+    /*display: flex;*/
+}
+
+/* uncomment this and see effect by moving mouse over square or touching square on a phone */
+/*
+.square:hover {
+    background-color: rgb(200,200,200);
+}
+*/
+
+/* uncomment these to see effect - visit on phone more likely than browser */
+/* 
+.keyboard-row {
+  display: flex;
+  width: 100%;
+}
+
+
+.keyboard-row button {
+  flex-grow: 1;
+}
+*/
